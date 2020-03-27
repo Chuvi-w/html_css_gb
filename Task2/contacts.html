@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog/index.html">Каталог</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+    <hr>
+    <h1>Оставьте ваш отзыв</h1>
+    <form action="contacts.html" method="get">
+
+        <p>Ваше имя:<input type="text" name="username" placeholder="Имя" required></p>
+        <p>Ваш телефон:<input type="tel" name="phone" placeholder="+71239876543" required></p>
+        <p>Ваш e-mail:<input type="email" name="mail" placeholder="mail@example.com" required></p>
+        <p>Ваш пол:</p>
+        <ul>
+            <!-- Не уверен, что так можно. Скорее всего - нельзя. Но W3C валидатор молчит. -->
+            <li><input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Мужской</label></li>
+            <li><input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label></li>
+            <li><input type="radio" id="other" name="gender" value="other">
+                <label for="other">Иное</label></li>
+        </ul>
+
+        <!-- The “color” input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+        Впрочем... неважно.-->
+        <p>Ваш любимый цвет:<input type="color" name="color"></p>
+        <p><textarea rows="10" cols="45" name="text" placeholder="Ваш комментарий."></textarea></p>
+        <input type="submit"><br>
+        <input type="reset" value="Очистить">
+    </form>
+    <hr>
+    <h2>Адрес магазина:</h2>
+    <p>Lorem, ipsum dolor.</p>
+    <script async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa8f6a421b75c681602bccef8aa1146745a2b5ada63ab3715e5b39fd3cd8330d2&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true">
+    </script>
+    <p><b>&copy;&nbsp;&laquo;Все права защищены&raquo;</b><br><sub>
+            <font size="2" color="#dfdfdf">Кроме яндекс карт. Они сами по себе.<br>А вообще, ничего не защищено.</font>
+        </sub></p>
+</body>
+
+</html>
